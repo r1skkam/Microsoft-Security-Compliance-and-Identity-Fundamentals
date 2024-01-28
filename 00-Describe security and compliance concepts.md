@@ -128,3 +128,70 @@ In the Zero Trust model, all elements work together to provide end-to-end securi
 ![image](https://github.com/r1skkam/Microsoft-Security-Compliance-and-Identity-Fundamentals/assets/58542375/6e8e8007-40ab-4aab-894a-c4ed4e8b941b)
 
 A security strategy that employs the three principles of the Zero Trust model across the six foundational pillars helps companies deliver and enforce security across their organization.
+
+### Describe encryption and hashing
+
+**4 minutes**
+
+One way to mitigate against common cybersecurity threats is to encrypt sensitive or valuable data. Encryption is the process of making data unreadable and unusable to unauthorized viewers. To use or read encrypted data, it must be decrypted, which requires the use of a secret key.
+
+There are two top-level types of encryption: symmetric and asymmetric. Symmetric encryption uses the same key to encrypt and decrypt the data. Asymmetric encryption uses a public key and private key pair. Either key can encrypt data, but the key used to encrypt can’t be used to decrypt encrypted data. To decrypt, you need a paired key. For example, if the public key is used to encrypt, then only the corresponding private key can be used to decrypt. Asymmetric encryption is used for things such accessing sites on the internet using the HTTPS protocol and electronic data signing solutions. Encryption may protect data at rest, or in transit. For additional information on the concepts of cryptography, refer to [Describe concepts of cryptography](https://learn.microsoft.com/en-us/training/modules/describe-concepts-of-cryptography/)
+
+![image](https://github.com/r1skkam/Microsoft-Security-Compliance-and-Identity-Fundamentals/assets/58542375/5cae8e3a-f66b-4e1b-8648-086d16edacde)
+
+### Encryption for data at rest
+
+Data at rest is the data that's stored on a physical device, such as a server. It may be stored in a database or a storage account but, regardless of where it's stored, encryption of data at rest ensures the data is unreadable without the keys and secrets needed to decrypt it.
+
+If an attacker obtained a hard drive with encrypted data and didn't have access to the encryption keys, they would be unable to read the data.
+
+### Encryption for data in transit
+
+Data in transit is the data moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by several different layers. It could be done by encrypting the data at the application layer before sending it over a network. HTTPS is an example of encryption in transit.
+
+Encrypting data in transit protects it from outside observers and provides a mechanism to transmit data while limiting the risk of exposure.
+
+### Encryption for data in use
+
+A common use case for encryption of data in use involves securing data in nonpersistent storage, such as RAM or CPU caches. This can be achieved through technologies that create an enclave (think of this as a secured lockbox) that protects the data and keeps data encrypted while the CPU processes the data.
+
+### Hashing
+
+Hashing uses an algorithm to convert text to a unique fixed-length value called a hash. Each time the same text is hashed using the same algorithm, the same hash value is produced. That hash can then be used as a unique identifier of its associated data.
+
+Hashing is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original.
+
+Hashing is often used to store passwords. When a user enters their password, the same algorithm that created the stored hash creates a hash of the entered password. This is compared to the stored hashed version of the password. If they match, the user has entered their password correctly. This is more secure than storing plain text passwords, but hashing algorithms are also known to hackers. Because hash functions are deterministic (the same input produces the same output), hackers can use brute-force dictionary attacks by hashing the passwords. For every matched hash, they know the actual password. To mitigate this risk, passwords are often “salted”. This refers to adding a fixed-length random value to the input of hash functions to create unique hashes for same input.
+
+![image](https://github.com/r1skkam/Microsoft-Security-Compliance-and-Identity-Fundamentals/assets/58542375/8b72ae63-a1d9-42bf-b6fe-f7f1f82c16af)
+
+### Describe governance, risk, and compliance (GRC) concepts
+
+**4 minutes**
+
+Organizations face increasing complexity and change in regulatory environments, calling for a more structured approach for managing governance, risk, and compliance (GRC).
+
+![image](https://github.com/r1skkam/Microsoft-Security-Compliance-and-Identity-Fundamentals/assets/58542375/73d8fea7-cbc7-4e19-b23d-da1e35212b35)
+
+As organizations establish GRC competency they can establish a framework that includes implementing specific policies, operational processes, and technologies. A structured approach for managing GRC helps organizations reduce risk and improve compliance effectiveness.
+
+An important prerequisite to establishing GRC competency is understanding the key terms.
+
+### Governance
+Governance is the system of rules, practices, and processes an organization uses to direct and control its activities. Many governance activities arise from external standards, obligations and expectations. For example, organizations establish rules and process that define the who, what, where, and when users and applications can access corporate resources and who has administrative privileges and for how long.
+
+### Risk
+Risk management is the process of identifying, assessing, and responding to threats or events that can impact company or customer objectives. Organizations face risk from both external and internal sources. External risks can come from political and economic forces weather related events, pandemics, and security breaches to name just a few sources. Internal risks are risks that come from within the organization itself. Examples include leaks of sensitive data, intellectual property theft, fraud, and insider trading.
+
+### Compliance
+Compliance refers to the country/region, state or federal laws or even multi-national regulations that an organization must follow. These regulations define what types of data must be protected, what processes are required under the legislation, and what penalties are issued to organizations that fail to comply.
+
+It's important to note that compliance is not the same as security. But, security should be considered when building a compliance plan as effective security is frequently a compliance requirement. Compliance requires only that the legally mandated minimum standards are met whereas data security covers all the processes, procedures and technologies that define how you look after sensitive data and guard against breaches.
+
+Some compliance-related concepts include:
+
+- **Data residency** - When it comes to compliance, data residency regulations govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally. These regulations can differ significantly depending on jurisdiction.
+- **Data sovereignty** - Another important consideration is data sovereignty, the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed. This can add a layer of complexity when it comes to compliance because the same piece of data can be collected in one location, stored in another, and processed in still another; making it subject to laws from different countries/regions.
+- **Data privacy** - Providing notice and being transparent about the collection, processing, use, and sharing of personal data are fundamental principles of privacy laws and regulations. Personal data means any information relating to an identified or identifiable natural person. Privacy laws encompass any data that is directly linked or indirectly linkable back to a person. Organizations are subject to, and must operate consistent with, a multitude of laws, regulations, codes of conduct, industry-specific standards, and compliance standards governing data privacy.
+
+All organizations manage data so understanding terminology and concepts related to compliance is important as they work to meet the minimum, mandated laws and/or regulations.
