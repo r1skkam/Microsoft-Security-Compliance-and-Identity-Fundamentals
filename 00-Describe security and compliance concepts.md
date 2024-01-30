@@ -195,3 +195,5 @@ Some compliance-related concepts include:
 - **Data privacy** - Providing notice and being transparent about the collection, processing, use, and sharing of personal data are fundamental principles of privacy laws and regulations. Personal data means any information relating to an identified or identifiable natural person. Privacy laws encompass any data that is directly linked or indirectly linkable back to a person. Organizations are subject to, and must operate consistent with, a multitude of laws, regulations, codes of conduct, industry-specific standards, and compliance standards governing data privacy.
 
 All organizations manage data so understanding terminology and concepts related to compliance is important as they work to meet the minimum, mandated laws and/or regulations.
+
+![image](https://github.com/r1skkam/Microsoft-Security-Compliance-and-Identity-Fundamentals/assets/58542375/8df210bc-60e4-4a93-b36c-e1b1ca0ee473)
